@@ -12,9 +12,10 @@ var later = require('later');
 },sched);*/
 
 var laterRun = function(hour, fn) {
+
     var sched = {
         schedules: [{
-            h: [hour],
+            h: hour,
             m: [0]
         }]
     };
