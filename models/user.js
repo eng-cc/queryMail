@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var opts = require('./../settings.js');
 
-mongoose.connect(opts.mongodb.url);
+mongoose.connect(opts.lomongodb.url);
 
 
 var userSchema = new mongoose.Schema({
