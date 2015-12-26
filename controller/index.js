@@ -35,7 +35,7 @@ var works = function() {
 
 var runAll = function() {
 	//console.log('runAll');
-    laterRun([8,12,20,21,22,25,23,24,26,27,28], works);
+    laterRun([8,12,20,21,22,25,23], works);
 };
 
 module.exports = runAll;

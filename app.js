@@ -16,12 +16,10 @@ log4.configure({
         filename: 'logs/access.log',
         maxLogSize: 1024,
         backups: 3,
-        category: 'normal'
+        category: 'cheese'
     }],
     replaceConsole: true
 });
-/*var logs = log4.getLogger('normal');
-logs.setLevel('INFO');*/
 
 runAll();
 
