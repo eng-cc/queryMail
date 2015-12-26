@@ -15,7 +15,7 @@ log4.configure({
         type: 'file',
         filename: 'logs/access.log',
         maxLogSize: 1024,
-        backups: 3,
+        backups: 100,
         category: 'cheese'
     }],
     replaceConsole: true
