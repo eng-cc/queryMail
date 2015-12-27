@@ -38,8 +38,8 @@ user.prototype.save = function(cb){
 	});
 };
 
-user.prototype.query = function(q,cb){
-	userModel.findOne({name:q},function(err,user){
+user.prototype.query = function(cb){
+	userModel.findOne({name:this.name},function(err,user){
 		if (err) {
 			return cb(err);
 		};
