@@ -1,3 +1,4 @@
 node_modules
 static/gulpfile.js
 static/package.json
+logs
