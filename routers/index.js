@@ -25,6 +25,7 @@ router.post('/post', function(req, res) {
             });
         };
         if (haveUser && haveUser.name == postUser.name) {
+            res.header('Access-Control-Allow-Origin：*');
             res.json({
                 succ: false,
                 msg: '用户已注册'
