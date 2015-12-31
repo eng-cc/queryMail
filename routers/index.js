@@ -19,6 +19,7 @@ router.post('/post', function(req, res) {
     newUser.query(function(err, haveUser) {
         if (err) {
             console.log(err);
+            res.header('Access-Control-Allow-Origin：*');
             res.json({
                 succ: false,
                 msg: 'err'
@@ -37,12 +38,14 @@ router.post('/post', function(req, res) {
                 newUser.save(function(err, fullUser) {
                     if (err) {
                         console.log(err);
+                        res.header('Access-Control-Allow-Origin：*');
                         res.json({
                             succ: false,
                             msg: 'err'
                         });
                     };
                     sendEmail(fullUser);
+                    res.header('Access-Control-Allow-Origin：*');
                     res.json({
                         succ: true,
                         msg: fullUser
@@ -59,6 +62,7 @@ router.get('query', function(req, res) {
         password: req.body.password
     };
     autoQuery(postUser, function(bkMsg) {
+        res.header('Access-Control-Allow-Origin：*');
         res.json({
             succ: true,
             msg: bkMsg
