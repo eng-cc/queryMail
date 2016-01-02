@@ -9,6 +9,7 @@ router.get('', function(req, res) {
 });
 
 router.post('/post', function(req, res) {
+    res.header('Access-Control-Allow-Origin','*');
     var postUser = {
         name: req.body.name,
         password: req.body.password,

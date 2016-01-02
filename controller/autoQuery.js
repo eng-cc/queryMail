@@ -67,7 +67,7 @@ var parse = function(html) {
         decodeEntities: false
     });
     //console.log($('#reminder').html());
-    msg += $('#reminder').html();
+    msg = $('#reminder').html();
     //console.log('qureymsg');
     return msg;
 }
