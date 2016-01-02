@@ -68,7 +68,7 @@ var parse = function(html) {
     });
     //console.log($('#reminder').html());
     msg = $('#reminder').html();
-    //console.log('qureymsg');
+    console.log(msg);
     return msg;
 }
 
